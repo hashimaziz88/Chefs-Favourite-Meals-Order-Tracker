@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chef's Favourite Meals</title>
+    <!-- Font Awesome CDN link for icons -->
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts CDN link for Nunito and Varela Round fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      background-image: url('../images/restuarantImage.jpg');
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <!-- Container for the content -->
+    <div class="container py-5 h-100">
+      <!-- Row for alignment -->
+      <div class="row d-flex justify-content-center h-100">
+        <!-- Main content column -->
+        <div
+          class="col-12 col-md-8 col-lg-6 mx-auto rounded shadow bg-light p-4"
+        >
+          <!-- Title -->
+          <h1>Chef's Favourite Meals</h1>
+          <!-- Message display area -->
+          <div id="message" class="alert alert-info" role="alert"></div>
+          <!-- Description paragraph -->
+          <p>
+            Click the button below to get our chefs favorite meal based on your
+            main ingredient. You will be given an order number and the name of
+            your dish!
+          </p>
+          <!-- Button to start building order -->
+          <button id="takeOrderBtn" class="btn btn-primary">
+            Start Building Your Order
+          </button>
+          <br />
+          <!-- Display area for incomplete orders -->
+          <div id="incompleteOrdersDisplay" class="mt-4">
+            <h2>Incomplete Orders</h2>
+          </div>
+          <br />
+          <!-- Display area for completed orders -->
+          <div id="completedOrdersDisplay" class="mt-4">
+            <h2>Completed Orders</h2>
+          </div>
+          <!-- Description for completing orders -->
+          <div class="mt-4">
+            <p>
+              Make use of the "Complete Order" button below to set an order to
+              complete and move the order to the completed orders list.
+            </p>
+          </div>
+          <!-- Button to complete an order -->
+          <button id="completeOrderBtn" class="btn btn-success mt-4">
+            Complete Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS bundle CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom script for meal database handling -->
+    <script src="../JS/mealDB.js"></script>
+  </body>
+</html>
