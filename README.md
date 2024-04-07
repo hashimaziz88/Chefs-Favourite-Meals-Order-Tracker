@@ -64,8 +64,6 @@ Following the hyperlink will take you to the Node.js download page, check which 
    npm start
    ```
 
-   This command will start the application, and you should be able to access it in your web browser at the specified URL.
+Download the Live server Extension from the VS Code extensions tab, Right click in the mealDB.html file and click on the Open Live Server button to open the Applications Website in your Default Browser.
 
 ---
-
-This README provides instructions for setting up and running the JavaScript application using Visual Studio Code. Make sure to replace any placeholder URLs with the appropriate links for your project.
